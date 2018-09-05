@@ -2,16 +2,27 @@
   <v-layout column justify-center align-center>
     <v-flex xs12 sm8 md6>
       <v-card>
-        <v-card-title class="headline">Welcome to the Vuetify + Nuxt.js template</v-card-title>
+        <v-card-title class="headline">このサイトについて</v-card-title>
         <v-card-text>
-          <p>Vuetify is a progressive Material Design component framework for Vue.js. It was designed to empower developers to create amazing applications.</p>
-          <p>For more information on Vuetify, check out the <a href="https://vuetifyjs.com" target="_blank">documentation</a>.</p>
-          <p>If you have questions, please join the official <a href="https://chat.vuetifyjs.com/" target="_blank" title="chat">discord</a>.</p>
-          <p>Find a bug? Report it on the github <a href="https://github.com/vuetifyjs/vuetify/issues" target="_blank" title="contribute">issue board</a>.</p>
-          <p>Thank you for developing with Vuetify and I look forward to bringing more exciting features in the future.</p>
-          <div class="text-xs-right">
-            <em><small>&mdash; John Leider</small></em>
-          </div>
+          <p>2018年11月10日より開催されるシンデレラガールズ6thライブのファンサイトです。</p>
+          <p>正式名称：THE IDOLM@STER CINDERELLA GIRLS MERRY-GO-ROUNDOME!!!</p>
+          <p>公式のページはこちらのページをご覧下さい。
+            <a href="https://idolmaster.jp/event/cinderella6th.php" target="_blank">THE IDOLM@STER CINDERELLA GIRLS 6thLIVE</a>
+          </p>
+          <hr class="my-3">
+          <p></p>
+        </v-card-text>
+        <v-card-actions>
+          <v-spacer></v-spacer>
+          <v-btn color="primary" flat nuxt to="/inspire">Continue</v-btn>
+        </v-card-actions>
+      </v-card>
+    </v-flex>
+    <v-flex xs12 sm8 md6>
+      <v-card style="margin-top:10px;">
+        <v-card-title class="headline">このサイトについて</v-card-title>
+        <v-card-text>
+          <p>2018年11月10日より開催されるシンデレラガールズ6thライブのファンサイトです。</p>
           <hr class="my-3">
           <a href="https://nuxtjs.org/" target="_blank">Nuxt Documentation</a>
           <br>
@@ -21,6 +32,35 @@
           <v-spacer></v-spacer>
           <v-btn color="primary" flat nuxt to="/inspire">Continue</v-btn>
         </v-card-actions>
+      </v-card>
+    </v-flex>
+    <v-flex xs12 sm8 md6>
+      <v-card style="margin-top:10px;">
+        <v-card-title class="headline">問い合わせ</v-card-title>
+        <v-card-text>
+          <p>このサイトについてのご意見、ご要望等ありましたら下記フォームより送信頂くか、@duuunまでご連絡ください。</p>
+        </v-card-text>
+
+        <v-form v-model="valid" style="padding:15px;" name="contactform" netlify>
+          <v-text-field
+            v-model="name"
+            :rules="nameRules"
+            :counter="10"
+            label="お名前"
+            required
+          ></v-text-field>
+          <v-text-field
+            v-model="email"
+            :rules="emailRules"
+            label="メールアドレス"
+            required
+          ></v-text-field>
+          <v-text-field
+            label="メッセージ"
+            required
+          ></v-text-field>
+          <v-btn :disabled="!valid" @click="submit">送信</v-btn>
+        </v-form>
       </v-card>
     </v-flex>
   </v-layout>

@@ -45,13 +45,21 @@ export default {
   data () {
     return {
       clipped: false,
-      drawer: true,
+      drawer: false,
       fixed: false,
       items: [
-        { icon: 'home', title: 'Home', to: '/' },
-        { icon: 'bubble_chart', title: 'Inspire', to: '/inspire' },
-        // new pages
-        { icon: 'info', title: 'About', to: '/about' }
+        { icon: 'home', title: 'ホーム', to: '/' },
+        {
+          icon: 'bubble_chart',
+          title: 'セットリスト予想',
+          to: '/inspire'
+        },
+        {
+          icon: 'bubble_chart',
+          title: 'フラワースタンド',
+          to: '/flower'
+        },
+        { icon: 'info', title: 'このサイトについて', to: '/about' }
       ],
       miniVariant: false,
       right: true,
