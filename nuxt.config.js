@@ -47,5 +47,12 @@ module.exports = {
         })
       }
     }
+  },
+  modules: [
+    '@nuxtjs/pwa'
+  ],
+  manifest: {
+    name: 'Cinderella-6th',
+    lang: 'ja'
   }
 }

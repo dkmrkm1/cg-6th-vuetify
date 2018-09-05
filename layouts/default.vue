@@ -40,6 +40,21 @@
   </v-app>
 </template>
 
+<style>
+@media (min-width: 960px) {
+  .v-card {
+    min-height: 500px;
+  }
+}
+
+.v-card__title {
+  background: #f48fb1;
+  color: #fff;
+  font-weight: bold;
+}
+</style>
+
+
 <script>
 export default {
   data () {
@@ -50,12 +65,12 @@ export default {
       items: [
         { icon: 'home', title: 'ホーム', to: '/' },
         {
-          icon: 'bubble_chart',
+          icon: 'list_alt',
           title: 'セットリスト予想',
           to: '/inspire'
         },
         {
-          icon: 'bubble_chart',
+          icon: 'filter_vintage',
           title: 'フラワースタンド',
           to: '/flower'
         },
@@ -64,7 +79,7 @@ export default {
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: 'Cinderella Girls 6thLive MERRY-GO-ROUNDOME!!!'
+      title: 'Cinderella Girls 6thLive 特設ファンサイト'
     }
   }
 }
