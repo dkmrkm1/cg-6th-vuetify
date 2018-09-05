@@ -41,12 +41,12 @@
           <p>このサイトについてのご意見、ご要望等ありましたら下記フォームより送信頂くか、@duuunまでご連絡ください。</p>
         </v-card-text>
 
-        <v-form v-model="valid" style="padding:15px;" name="contactform" netlify>
-          <v-text-field v-model="name" :rules="nameRules" :counter="10" label="お名前" required></v-text-field>
-          <v-text-field v-model="email" :rules="emailRules" label="メールアドレス" required></v-text-field>
-          <v-text-field label="メッセージ" required></v-text-field>
-          <v-btn><input type="submit"></v-btn>
-        </v-form>
+        <form name="cnotactform" netlify>
+          <p><label>お名前：<input type="text" name="name"></label></p>
+          <p><label>メールアドレス：<input type="email" name="email"></label></p>
+          <p><label>メッセージ：<textarea name="message"></textarea></label></p>
+          <button type="submit">送信</button>
+        </form>
       </v-card>
     </v-flex>
   </v-layout>
