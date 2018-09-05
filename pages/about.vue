@@ -42,24 +42,10 @@
         </v-card-text>
 
         <v-form v-model="valid" style="padding:15px;" name="contactform" netlify>
-          <v-text-field
-            v-model="name"
-            :rules="nameRules"
-            :counter="10"
-            label="お名前"
-            required
-          ></v-text-field>
-          <v-text-field
-            v-model="email"
-            :rules="emailRules"
-            label="メールアドレス"
-            required
-          ></v-text-field>
-          <v-text-field
-            label="メッセージ"
-            required
-          ></v-text-field>
-          <v-btn :disabled="!valid" @click="submit">送信</v-btn>
+          <v-text-field v-model="name" :rules="nameRules" :counter="10" label="お名前" required></v-text-field>
+          <v-text-field v-model="email" :rules="emailRules" label="メールアドレス" required></v-text-field>
+          <v-text-field label="メッセージ" required></v-text-field>
+          <v-btn><input type="submit"></v-btn>
         </v-form>
       </v-card>
     </v-flex>
