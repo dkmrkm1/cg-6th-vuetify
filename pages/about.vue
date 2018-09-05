@@ -41,7 +41,7 @@
           <p>このサイトについてのご意見、ご要望等ありましたら下記フォームより送信頂くか、@duuunまでご連絡ください。</p>
         </v-card-text>
 
-        <form name="cnotactform" netlify>
+        <form name="cnotactform" method="POST" netlify>
           <p><label>お名前：<input type="text" name="name"></label></p>
           <p><label>メールアドレス：<input type="email" name="email"></label></p>
           <p><label>メッセージ：<textarea name="message"></textarea></label></p>
