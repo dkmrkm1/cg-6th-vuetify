@@ -2,8 +2,18 @@
   <v-container grid-list-xl>
   <v-layout cow wrap>
     <v-flex xs12 sm12 md12>
-      <h2>6thLiveまであと・・・</h2>
-      <h1 class="count"><span style="font-size:6rem;">{{ days }} </span><span style="font-size:4rem;">days</span>　{{ hours }}{{ minutes }}{{ seconds }}</h1>
+      <v-card class="card-live">
+        <v-img class="white--text" height="350px" src="/live.jpg">
+          <v-container fill-height fluid>
+            <v-layout fill-height>
+              <v-flex xs12 align-end flexbox>
+                <span class="headline">6thLiveまであと・・・</span>
+                <h1 class="count" style="padding:14px;"><span style="font-size:6rem;">{{ days }} </span><span style="font-size:4rem;">days</span>　{{ hours }}{{ minutes }}{{ seconds }}</h1>
+              </v-flex>
+            </v-layout>
+          </v-container>
+        </v-img>
+      </v-card>
     </v-flex>
     <v-flex xs12 sm12 md12>
       <v-card>
@@ -14,10 +24,17 @@
           <p class="card-text-setlist-title">◉ フラワースタンド</p>
           <p>有志の方のフラワースタンド企画について纏めさせて頂いております。</p>
           <p class="card-text-setlist-title">◉ このサイトについて</p>
-          <p>当サイトについて記載しております。お問い合わせ・ご要望等ありましたらそちらよりお願い致します。</p>
+          <p>当サイトについて記載しております。お問い合わせ・ご意見・ご要望等ありましたらこちらよりお願い致します。</p>
           <p style="display:inline-block; margin-top:30px;">
             ※本サイトの運営は個人がシンデレラガールズ6thLIVEを盛り上げたい一心で非営利にて行なっております。本人ももちろん参加致します。
           </p>
+          <div>
+            <a href="https://twiter.com/share?
+              url=https://pensive-lichterman-504d94.netlify.com/&
+              hashtags=imas_cg6th&
+              text=シンデレラガールズ6thLIVEファンサイト"
+              rel="nofollow" target="_blank">リンク</a>
+          </div>
         </v-card-text>
       </v-card>
     </v-flex>
@@ -35,9 +52,9 @@
             </v-avatar>11/11(日)
           </v-chip>
         </v-card-title>
-        <div>
+        <!-- <div>
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3237.280887517359!2d139.41836574970884!3d35.76847597340364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018de26f47cfbd3%3A0xa09b9b1c140042ce!2z44Oh44OD44OI44Op44Kk44OV44OJ44O844OgKOilv-atpuODieODvOODoCk!5e0!3m2!1sja!2sjp!4v1536257825915" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-        </div>
+        </div> -->
       </v-card>
     </v-flex>
     <v-flex xs12 sm6 md6>
@@ -79,6 +96,9 @@
 </template>
 
 <style scoped>
+.card-live {
+  min-height: 350px;
+}
 .count {
   font-family: "Lobster", cursive;
 }
