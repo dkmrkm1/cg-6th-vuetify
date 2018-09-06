@@ -49,7 +49,8 @@ module.exports = {
     }
   },
   modules: [
-    '@nuxtjs/pwa'
+    '@nuxtjs/pwa',
+    ['@nuxtjs/moment', ['ja']]
   ],
   manifest: {
     name: 'Cinderella-6th',

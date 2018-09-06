@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import Vuetify from 'vuetify'
 
-// change color
 Vue.use(Vuetify, {
   theme: {
     // primary: '#1976D2',

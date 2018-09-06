@@ -1,5 +1,5 @@
 <template>
-  <v-app light>
+  <v-app light class="app">
     <v-navigation-drawer
       :mini-variant.sync="miniVariant"
       :clipped="clipped"
@@ -35,18 +35,26 @@
       </v-container>
     </v-content>
     <v-footer :fixed="fixed" app>
-      <span>&copy; 2017 Duuun</span>
+      <span>&copy; 2018 Duuun / Daisuke Murakami</span>
     </v-footer>
   </v-app>
 </template>
 
 <style>
+.app {
+  font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ",
+    Meiryo, "ＭＳ Ｐゴシック", sans-serif;
+}
+
 @media (min-width: 960px) {
   .v-card {
     min-height: 500px;
   }
 }
 
+.v-card {
+  border-radius: 10px;
+}
 .v-card__title {
   background: #f48fb1;
   color: #fff;

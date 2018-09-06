@@ -1,31 +1,59 @@
 <template>
-  <v-layout column justify-center align-center>
-    <v-flex xs12 sm6 md6>
+  <v-container grid-list-xl>
+  <v-layout cow wrap>
+    <v-flex xs12 sm12 md12>
+      <h2>6thLiveまであと・・・</h2>
+      <h1 class="count"><span style="font-size:6rem;">{{ days }} </span><span style="font-size:4rem;">days</span>　{{ hours }}{{ minutes }}{{ seconds }}</h1>
+    </v-flex>
+    <v-flex xs12 sm12 md12>
       <v-card>
-        <v-card-title class="headline">Welcome to the Vuetify + Nuxt.js template</v-card-title>
-        <v-card-text>
-          <p>Vuetify is a progressive Material Design component framework for Vue.js. It was designed to empower developers to create amazing applications.</p>
-          <p>For more information on Vuetify, check out the <a href="https://vuetifyjs.com" target="_blank">documentation</a>.</p>
-          <p>If you have questions, please join the official <a href="https://chat.vuetifyjs.com/" target="_blank" title="chat">discord</a>.</p>
-          <p>Find a bug? Report it on the github <a href="https://github.com/vuetifyjs/vuetify/issues" target="_blank" title="contribute">issue board</a>.</p>
-          <p>Thank you for developing with Vuetify and I look forward to bringing more exciting features in the future.</p>
-          <div class="text-xs-right">
-            <em><small>&mdash; John Leider</small></em>
-          </div>
-          <hr class="my-3">
-          <a href="https://nuxtjs.org/" target="_blank">Nuxt Documentation</a>
-          <br>
-          <a href="https://github.com/nuxt/nuxt.js" target="_blank">Nuxt GitHub</a>
+        <v-card-title class="headline">運営の手引き</v-card-title>
+        <v-card-text class="card-text-setlist">
+          <p class="card-text-setlist-title">◉ セットリスト予想</p>
+          <p>ライブ当日毎のシンデレラガールズ出演者一覧と予想されるセットリストを記載しております。</p>
+          <p class="card-text-setlist-title">◉ フラワースタンド</p>
+          <p>有志の方のフラワースタンド企画について纏めさせて頂いております。</p>
+          <p class="card-text-setlist-title">◉ このサイトについて</p>
+          <p>当サイトについて記載しております。お問い合わせ・ご要望等ありましたらそちらよりお願い致します。</p>
+          <p style="display:inline-block; margin-top:30px;">
+            ※本サイトの運営は個人がシンデレラガールズ6thLIVEを盛り上げたい一心で非営利にて行なっております。本人ももちろん参加致します。
+          </p>
         </v-card-text>
-        <v-card-actions>
-          <v-spacer></v-spacer>
-          <v-btn color="primary" flat nuxt to="/inspire">Continue</v-btn>
-        </v-card-actions>
       </v-card>
     </v-flex>
     <v-flex xs12 sm6 md6>
       <v-card>
-        <v-card-title class="headline">Welcome to the Vuetify + Nuxt.js template</v-card-title>
+        <v-card-title class="headline">[埼玉] メットライフドームまでのアクセス
+          <v-chip color="blue" text-color="white">
+            <v-avatar>
+              <v-icon color="white">whatshot</v-icon>
+            </v-avatar>11/10(土)
+          </v-chip>
+          <v-chip color="teal" text-color="white">
+            <v-avatar>
+              <v-icon color="white">whatshot</v-icon>
+            </v-avatar>11/11(日)
+          </v-chip>
+        </v-card-title>
+        <div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3237.280887517359!2d139.41836574970884!3d35.76847597340364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018de26f47cfbd3%3A0xa09b9b1c140042ce!2z44Oh44OD44OI44Op44Kk44OV44OJ44O844OgKOilv-atpuODieODvOODoCk!5e0!3m2!1sja!2sjp!4v1536257825915" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </v-card>
+    </v-flex>
+    <v-flex xs12 sm6 md6>
+      <v-card>
+        <v-card-title class="headline">[愛知] ナゴヤドームまでのアクセス
+          <v-chip color="blue" text-color="white">
+            <v-avatar>
+              <v-icon color="white">whatshot</v-icon>
+            </v-avatar>12/1(土)
+          </v-chip>
+          <v-chip color="teal" text-color="white">
+            <v-avatar>
+              <v-icon color="white">whatshot</v-icon>
+            </v-avatar>12/2(日)
+          </v-chip>
+        </v-card-title>
         <v-card-text>
           <p>Vuetify is a progressive Material Design component framework for Vue.js. It was designed to empower developers to create amazing applications.</p>
           <p>For more information on Vuetify, check out the <a href="https://vuetifyjs.com" target="_blank">documentation</a>.</p>
@@ -47,4 +75,71 @@
       </v-card>
     </v-flex>
   </v-layout>
+  </v-container>
 </template>
+
+<style scoped>
+.count {
+  font-family: "Lobster", cursive;
+}
+.card-text-setlist {
+  font-size: 1.3rem;
+}
+.card-text-setlist-title {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+</style>
+
+<script>
+import $moment from 'moment'
+
+export default {
+  head () {
+    return {
+      script: [
+        {
+          src:
+            'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'
+        }
+      ],
+      link: [
+        {
+          rel: 'stylesheet',
+          href: 'https://fonts.googleapis.com/css?family=Lobster'
+        }
+      ]
+    }
+  },
+  data () {
+    return {
+      days: '',
+      hours: '',
+      minutes: '',
+      seconds: ''
+    }
+  },
+  created: function () {
+    setInterval(() => {
+      this.getTime()
+    }, 1000)
+  },
+  methods: {
+    getTime: function () {
+      let duration = this.getNowTime()
+
+      this.days = Math.floor(duration.asDays())
+      this.hours = ('0' + duration.hours()).slice(-2) + ' h '
+      this.minutes = ('0' + duration.minutes()).slice(-2) + ' m '
+      this.seconds = ('0' + duration.seconds()).slice(-2) + ' s '
+    },
+    getNowTime: function () {
+      let diff = $moment('2018-11-10').diff($moment())
+      let duration = $moment.duration(diff)
+      return duration
+    }
+  }
+}
+</script>
+
+
