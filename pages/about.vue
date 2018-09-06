@@ -6,7 +6,7 @@
       <v-card>
         <v-card-title class="headline">このサイトについて</v-card-title>
         <v-card-text>
-          <p>2018年11月10日より開催されるシンデレラガールズ6thライブの"非公式"ファンサイトです。</p>
+          <p>2018年11月10日より開催されるシンデレラガールズ6thライブの"非公式"ファンサイトです。<a href="https://twitter.com/duuun1002" target="_blank">@duuun1002</a>が非営利にて運営しております。</p>
           <p>正式名称：THE IDOLM@STER CINDERELLA GIRLS MERRY-GO-ROUNDOME!!!</p>
           <p>公式サイトは下記ページをご覧下さい。</p>
           <p><a href="https://idolmaster.jp/event/cinderella6th.php" target="_blank">THE IDOLM@STER CINDERELLA GIRLS 6thLIVE</a></p>
@@ -34,7 +34,7 @@
           <p>このサイトについてのご意見、ご要望等ありましたら下記フォームより送信頂くか、@duuunまでご連絡ください。</p>
         </v-card-text>
         <form name="contact" netlify>
-          <input type="hidden" name="contact" value="contact" />
+          <input type="hidden" name="form-name" value="contact">
           <p><label>お名前：<input type="text" name="name"></label></p>
           <p><label>メール：<input type="text" name="email"></label></p>
           <p><label>メッセージ：<textarea name="message"></textarea></label></p>
