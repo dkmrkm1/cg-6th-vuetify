@@ -33,7 +33,8 @@
         <v-card-text>
           <p>このサイトについてのご意見、ご要望等ありましたら下記フォームより送信頂くか、@duuunまでご連絡ください。</p>
         </v-card-text>
-        <form name="contactform" method="POST" netlify>
+        <form name="contactform" netlify>
+          <input type="hidden" name="contact-form" value="contact">
           <p><label>お名前：<input type="text" name="name"></label></p>
           <p><label>メールアドレス：<input type="email" name="email"></label></p>
           <p><label>メッセージ：<textarea name="message"></textarea></label></p>
