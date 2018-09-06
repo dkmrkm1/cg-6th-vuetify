@@ -29,10 +29,7 @@
             ※本サイトの運営は個人がシンデレラガールズ6thLIVEを盛り上げたい一心で非営利にて行なっております。本人ももちろん参加致します。
           </p>
           <div>
-            <a href="https://twiter.com/share?
-              url=https://pensive-lichterman-504d94.netlify.com/&
-              hashtags=imas_cg6th&
-              text=シンデレラガールズ6thLIVEファンサイト"
+            <a href="https://twiter.com/share?url=https://pensive-lichterman-504d94.netlify.com&hashtags=imas_cg6th&text=シンデレラガールズ6thLIVEファンサイト"
               rel="nofollow" target="_blank">リンク</a>
           </div>
         </v-card-text>
@@ -112,54 +109,54 @@
 </style>
 
 <script>
-import $moment from 'moment'
+import $moment from "moment";
 
 export default {
-  head () {
+  head() {
     return {
       script: [
         {
           src:
-            'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'
+            "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"
         }
       ],
       link: [
         {
-          rel: 'stylesheet',
-          href: 'https://fonts.googleapis.com/css?family=Lobster'
+          rel: "stylesheet",
+          href: "https://fonts.googleapis.com/css?family=Lobster"
         }
       ]
-    }
+    };
   },
-  data () {
+  data() {
     return {
-      days: '',
-      hours: '',
-      minutes: '',
-      seconds: ''
-    }
+      days: "",
+      hours: "",
+      minutes: "",
+      seconds: ""
+    };
   },
-  created: function () {
+  created: function() {
     setInterval(() => {
-      this.getTime()
-    }, 1000)
+      this.getTime();
+    }, 1000);
   },
   methods: {
-    getTime: function () {
-      let duration = this.getNowTime()
+    getTime: function() {
+      let duration = this.getNowTime();
 
-      this.days = Math.floor(duration.asDays())
-      this.hours = ('0' + duration.hours()).slice(-2) + ' h '
-      this.minutes = ('0' + duration.minutes()).slice(-2) + ' m '
-      this.seconds = ('0' + duration.seconds()).slice(-2) + ' s '
+      this.days = Math.floor(duration.asDays());
+      this.hours = ("0" + duration.hours()).slice(-2) + " h ";
+      this.minutes = ("0" + duration.minutes()).slice(-2) + " m ";
+      this.seconds = ("0" + duration.seconds()).slice(-2) + " s ";
     },
-    getNowTime: function () {
-      let diff = $moment('2018-11-10').diff($moment())
-      let duration = $moment.duration(diff)
-      return duration
+    getNowTime: function() {
+      let diff = $moment("2018-11-10").diff($moment());
+      let duration = $moment.duration(diff);
+      return duration;
     }
   }
-}
+};
 </script>
 
 
