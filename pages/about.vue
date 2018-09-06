@@ -34,7 +34,7 @@
           <p>このサイトについてのご意見、ご要望等ありましたら下記フォームより送信頂くか、@duuunまでご連絡ください。</p>
         </v-card-text>
         <v-form v-model="valid" name="contactform" netlify>
-          <input type="hidden" name="contactform" value="contact">
+          <input type="hidden" name="contactform" value="contact" />
           <v-text-field name="name" label="Name" required></v-text-field>
           <v-text-field name="email" label="E-mail" required></v-text-field>
           <!-- <p><label>メッセージ：<textarea name="message"></textarea></label></p> -->
