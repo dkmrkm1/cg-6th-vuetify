@@ -17,7 +17,9 @@
         <v-card>
           <v-card-title class="headline">このサイトについて</v-card-title>
           <v-card-text>
-            <p>2018年11月10日より開催されるシンデレラガールズ6thライブのファンサイトです。</p>
+            <div v-if="ok">TEXT</div>
+            
+            <v-btn v-on:click="change=isChild=!isChild">Change</v-btn>
             <p>2018年11月10日より開催されるシンデレラガールズ6thライブのファンサイトです。</p>
             <p>2018年11月10日より開催されるシンデレラガールズ6thライブのファンサイトです。</p>
             <p>2018年11月10日より開催されるシンデレラガールズ6thライブのファンサイトです。</p>
@@ -48,8 +50,22 @@
 </template>
 
 <style scoped>
+.child {
+  color: red;
+}
+.is-active {
+  font-weight: bold;
+}
 </style>
 
 <script>
+export default {
+  data () {
+    return {
+      ok: true
+    }
+  },
+  method: {}
+}
 </script>
 

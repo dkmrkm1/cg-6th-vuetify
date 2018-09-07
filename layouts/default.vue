@@ -42,7 +42,7 @@
 
 <style>
 .app {
-  font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ",
+  font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ,
     Meiryo, "ＭＳ Ｐゴシック", sans-serif;
 }
 
@@ -87,7 +87,7 @@ export default {
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: 'Cinderella Girls 6thLive 特設ファンサイト'
+      title: 'CinderellaGirls 6thLive ファンサイト'
     }
   }
 }
