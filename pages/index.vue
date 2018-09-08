@@ -7,7 +7,7 @@
           <v-container fill-height fluid>
             <v-layout fill-height>
               <v-flex xs12 align-end flexbox>
-                <span class="headline">6thLiveまであと・・・</span>
+                <span class="headline">to the 6thLIVE...</span>
                 <h1 class="count" style="padding:14px;"><span style="font-size:6rem;">{{ days }} </span><span style="font-size:4rem;">days</span>　{{ hours }}{{ minutes }}{{ seconds }}</h1>
               </v-flex>
             </v-layout>

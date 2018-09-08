@@ -41,6 +41,10 @@
 </template>
 
 <style>
+body {
+  font-family: "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro W3", sans-serif !important;
+}
+
 @media (min-width: 960px) {
   .v-card {
     min-height: 500px;
@@ -50,11 +54,20 @@
   padding: 13px;
 }
 .v-toolbar__content {
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     45deg,
     #ff9a9e 0%,
     #fad0c4 99%,
     #fad0c4 100%
+  ); */
+  background-image: linear-gradient(
+    to left,
+    #ff8177 0%,
+    #ff867a 0%,
+    #ff8c7f 21%,
+    #f99185 52%,
+    #cf556c 78%,
+    #b12a5b 100%
   );
   color: #fff;
 }
@@ -87,12 +100,12 @@ export default {
         {
           icon: 'list_alt',
           title: 'セットリスト予想',
-          to: '/flower'
+          to: '/idols'
         },
         {
           icon: 'filter_vintage',
           title: 'フラワースタンド',
-          to: '/inspire'
+          to: '/flower'
         },
         { icon: 'info', title: 'このサイトについて', to: '/about' }
       ],
