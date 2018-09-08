@@ -41,22 +41,32 @@
 </template>
 
 <style>
-.app {
-  font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ,
-    Meiryo, "ＭＳ Ｐゴシック", sans-serif;
-}
-
 @media (min-width: 960px) {
   .v-card {
     min-height: 500px;
   }
 }
-
+.v-toolbar__content {
+  background-image: linear-gradient(
+    45deg,
+    #ff9a9e 0%,
+    #fad0c4 99%,
+    #fad0c4 100%
+  );
+  color: #fff;
+}
+.v-toolbar__title {
+  font-weight: bold;
+  font-size: 1.7rem;
+}
+.v-btn__content {
+  color: #fff;
+}
 .v-card {
   border-radius: 10px;
 }
 .v-card__title {
-  background: #f48fb1;
+  background-image: linear-gradient(to right, #42a5f5 0%, #90caf9 100%);
   color: #fff;
   font-weight: bold;
 }
@@ -65,30 +75,30 @@
 
 <script>
 export default {
-  data () {
+  data() {
     return {
       clipped: false,
       drawer: false,
       fixed: false,
       items: [
-        { icon: 'home', title: 'ホーム', to: '/' },
+        { icon: "home", title: "ホーム", to: "/" },
         {
-          icon: 'list_alt',
-          title: 'セットリスト予想',
-          to: '/inspire'
+          icon: "list_alt",
+          title: "セットリスト予想",
+          to: "/inspire"
         },
         {
-          icon: 'filter_vintage',
-          title: 'フラワースタンド',
-          to: '/flower'
+          icon: "filter_vintage",
+          title: "フラワースタンド",
+          to: "/flower"
         },
-        { icon: 'info', title: 'このサイトについて', to: '/about' }
+        { icon: "info", title: "このサイトについて", to: "/about" }
       ],
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: 'CinderellaGirls 6thLive ファンサイト'
-    }
+      title: "CinderellaGirls 6thLive ファンサイト"
+    };
   }
-}
+};
 </script>

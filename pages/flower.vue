@@ -79,10 +79,19 @@ export default {
           fourth: false
         },
         {
+          name: '青木 志貴',
+          act: '二宮 飛鳥',
+          attribute: 'Cool',
+          first: false,
+          second: true,
+          third: false,
+          fourth: false
+        },
+        {
           name: '青木 瑠璃子',
           act: '多田 李衣菜',
           attribute: 'Cool',
-          first: false,
+          first: true,
           second: false,
           third: true,
           fourth: true
@@ -92,7 +101,7 @@ export default {
           act: '早坂 美玲',
           attribute: 'Cute',
           first: false,
-          second: false,
+          second: true,
           third: true,
           fourth: true
         },
@@ -110,13 +119,22 @@ export default {
           act: '双葉 杏',
           attribute: 'Cute',
           first: false,
-          second: false,
+          second: true,
           third: true,
           fourth: true
         },
         {
           name: '今井 麻夏',
           act: '佐々木 千枝',
+          attribute: 'Cool',
+          first: false,
+          second: true,
+          third: false,
+          fourth: false
+        },
+        {
+          name: '上坂 すみれ',
+          act: 'アナスタシア',
           attribute: 'Cool',
           first: false,
           second: true,
@@ -142,11 +160,29 @@ export default {
           fourth: true
         },
         {
+          name: '大坪 由佳',
+          act: '三村 かな子',
+          attribute: 'Cute',
+          first: true,
+          second: false,
+          third: true,
+          fourth: false
+        },
+        {
           name: '金子 真由美',
           act: '藤本 里奈',
           attribute: 'Cute',
           first: true,
           second: true,
+          third: false,
+          fourth: false
+        },
+        {
+          name: '木村 珠莉',
+          act: '相葉 夕美',
+          attribute: 'Passion',
+          first: true,
+          second: false,
           third: false,
           fourth: false
         },
@@ -232,10 +268,55 @@ export default {
           fourth: false
         },
         {
+          name: '高森 奈津美',
+          act: '前川 みく',
+          attribute: 'Cute',
+          first: true,
+          second: false,
+          third: false,
+          fourth: false
+        },
+        {
           name: '立花 理香',
           act: '小早川 紗枝',
           attribute: 'Cute',
           first: true,
+          second: true,
+          third: false,
+          fourth: false
+        },
+        {
+          name: '伊達 朱里紗',
+          act: '難波 笑美',
+          attribute: 'Passion',
+          first: true,
+          second: false,
+          third: false,
+          fourth: false
+        },
+        {
+          name: '千菅 春香',
+          act: '松永 涼',
+          attribute: 'Cool',
+          first: true,
+          second: false,
+          third: false,
+          fourth: false
+        },
+        {
+          name: '東山 奈央',
+          act: '川島 瑞樹',
+          attribute: 'Cool',
+          first: true,
+          second: false,
+          third: false,
+          fourth: false
+        },
+        {
+          name: '新田 ひより',
+          act: '道明寺 歌鈴',
+          attribute: 'Passion',
+          first: false,
           second: true,
           third: false,
           fourth: false
@@ -250,21 +331,111 @@ export default {
           fourth: false
         },
         {
-          name: '立花 理香',
-          act: '小早川 紗枝',
-          attribute: 'Cute',
+          name: '原 優子',
+          act: '向井 拓海',
+          attribute: 'Passion',
           first: true,
           second: true,
           third: false,
           fourth: false
         },
         {
-          name: '立花 理香',
-          act: '小早川 紗枝',
+          name: '春瀬 なつみ',
+          act: '龍崎 薫',
+          attribute: 'Passion',
+          first: false,
+          second: true,
+          third: false,
+          fourth: false
+        },
+        {
+          name: '藤本 彩花',
+          act: '棟方 愛海',
+          attribute: 'Cute',
+          first: true,
+          second: false,
+          third: false,
+          fourth: false
+        },
+        {
+          name: '三宅 麻理恵',
+          act: '安部 奈々',
           attribute: 'Cute',
           first: true,
           second: true,
+          third: true,
+          fourth: false
+        },
+        {
+          name: '村中 知',
+          act: '大和 亜季',
+          attribute: 'Cool',
+          first: true,
+          second: false,
           third: false,
+          fourth: false
+        },
+        {
+          name: '杜野 まこ',
+          act: '姫川 友紀',
+          attribute: 'Passion',
+          first: true,
+          second: false,
+          third: false,
+          fourth: false
+        },
+        {
+          name: '安野 希世乃',
+          act: '木村 夏樹',
+          attribute: 'Passion',
+          first: true,
+          second: true,
+          third: false,
+          fourth: false
+        },
+        {
+          name: '山下 七海',
+          act: '大槻 唯',
+          attribute: 'Passion',
+          first: true,
+          second: false,
+          third: false,
+          fourth: true
+        },
+        {
+          name: '山本 希望',
+          act: '城ヶ崎 莉嘉',
+          attribute: 'Passion',
+          first: true,
+          second: true,
+          third: false,
+          fourth: false
+        },
+        {
+          name: '佳村 はるか',
+          act: '城ヶ崎 美嘉',
+          attribute: 'Passion',
+          first: true,
+          second: true,
+          third: false,
+          fourth: false
+        },
+        {
+          name: 'ルゥ ティン',
+          act: '塩見 周子',
+          attribute: 'Cool',
+          first: true,
+          second: true,
+          third: false,
+          fourth: false
+        },
+        {
+          name: '三宅 麻理恵',
+          act: '安部 奈々',
+          attribute: 'Cute',
+          first: true,
+          second: true,
+          third: true,
           fourth: false
         }
       ]
