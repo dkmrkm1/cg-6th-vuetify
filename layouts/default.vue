@@ -46,6 +46,9 @@
     min-height: 500px;
   }
 }
+.container {
+  padding: 13px;
+}
 .v-toolbar__content {
   background-image: linear-gradient(
     45deg,
@@ -72,33 +75,32 @@
 }
 </style>
 
-
 <script>
 export default {
-  data() {
+  data () {
     return {
       clipped: false,
       drawer: false,
       fixed: false,
       items: [
-        { icon: "home", title: "ホーム", to: "/" },
+        { icon: 'home', title: 'ホーム', to: '/' },
         {
-          icon: "list_alt",
-          title: "セットリスト予想",
-          to: "/inspire"
+          icon: 'list_alt',
+          title: 'セットリスト予想',
+          to: '/flower'
         },
         {
-          icon: "filter_vintage",
-          title: "フラワースタンド",
-          to: "/flower"
+          icon: 'filter_vintage',
+          title: 'フラワースタンド',
+          to: '/inspire'
         },
-        { icon: "info", title: "このサイトについて", to: "/about" }
+        { icon: 'info', title: 'このサイトについて', to: '/about' }
       ],
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: "CinderellaGirls 6thLive ファンサイト"
-    };
+      title: 'CinderellaGirls 6thLive ファンサイト'
+    }
   }
-};
+}
 </script>

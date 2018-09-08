@@ -1,6 +1,45 @@
 <template>
   <v-container grid-list-xl>
     <v-layout row wrap>
+      <v-flex xs12 sm4 md4>
+        <v-card class="card-live" style="min-height:200px;">
+          <v-img class="white--text" height="200px" src="/wall.jpg">
+            <v-container fill-height fluid>
+              <v-layout fill-height>
+                <v-flex xs12 align-end flexbox>
+                  <h1>Cute</h1>
+                </v-flex>
+              </v-layout>
+            </v-container>
+          </v-img>
+        </v-card>
+      </v-flex>
+      <v-flex xs12 sm4 md4>
+        <v-card class="card-live" style="min-height:200px;">
+          <v-img class="white--text" height="200px" src="/coo.jpg">
+            <v-container fill-height fluid>
+              <v-layout fill-height>
+                <v-flex xs12 align-end flexbox>
+                  <h1>Cool</h1>
+                </v-flex>
+              </v-layout>
+            </v-container>
+          </v-img>
+        </v-card>
+      </v-flex>
+      <v-flex xs12 sm4 md4>
+        <v-card class="card-live" style="min-height:200px;">
+          <v-img class="white--text" height="200px" src="/photo.jpg">
+            <v-container fill-height fluid>
+              <v-layout fill-height>
+                <v-flex xs12 align-end flexbox>
+                  <h1>Passion</h1>
+                </v-flex>
+              </v-layout>
+            </v-container>
+          </v-img>
+        </v-card>
+      </v-flex>
       <v-flex xs12 sm12 md12>
         <v-card>
           <v-card-title class="headline">出演者一覧（敬称略、順不同）</v-card-title>
