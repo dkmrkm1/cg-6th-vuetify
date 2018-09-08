@@ -1,3 +1,5 @@
+// import dotenv from 'dotenv'
+// dotenv.config()
 
 module.exports = {
   /*
@@ -15,7 +17,13 @@ module.exports = {
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' }
     ]
   },
-  plugins: ['~/plugins/vuetify.js'],
+  env: {
+    apiKey: process.env.API_KEY
+  },
+  plugins: [
+    { src: '~/plugins/vuetify.js' },
+    { src: '~/plugins/maps', ssr: false }
+  ],
   css: [
     '~/assets/style/app.styl'
   ],

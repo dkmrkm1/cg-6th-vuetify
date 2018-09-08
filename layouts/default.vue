@@ -107,7 +107,8 @@ export default {
           title: 'フラワースタンド',
           to: '/flower'
         },
-        { icon: 'info', title: 'このサイトについて', to: '/about' }
+        { icon: 'help', title: 'このサイトについて', to: '/about' },
+        { icon: 'new_releases', title: '更新履歴', to: '/release' }
       ],
       miniVariant: false,
       right: true,

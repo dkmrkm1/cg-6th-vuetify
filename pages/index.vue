@@ -49,9 +49,6 @@
             </v-avatar>11/11(日)
           </v-chip>
         </v-card-title>
-        <!-- <div>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3237.280887517359!2d139.41836574970884!3d35.76847597340364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018de26f47cfbd3%3A0xa09b9b1c140042ce!2z44Oh44OD44OI44Op44Kk44OV44OJ44O844OgKOilv-atpuODieODvOODoCk!5e0!3m2!1sja!2sjp!4v1536257825915" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-        </div> -->
       </v-card>
     </v-flex>
     <v-flex xs12 sm6 md6>
@@ -88,11 +85,20 @@
         </v-card-actions>
       </v-card>
     </v-flex>
+    <v-flex xs12 sm6 md6>
+      <v-card>
+        <div id="map"></div>
+      </v-card>
+    </v-flex>
   </v-layout>
   </v-container>
 </template>
 
 <style scoped>
+#map {
+  width: 600px;
+  height: 500px;
+}
 .card-live {
   min-height: 350px;
 }
@@ -133,8 +139,17 @@ export default {
       days: '',
       hours: '',
       minutes: '',
-      seconds: ''
+      seconds: '',
+      map: null
     }
+  },
+  mounted () {
+    const element = document.getElementById('map')
+    const map = new this.$gmap.Map(element, {
+      center: { lat: 35.685175, lng: 139.7528 },
+      zoom: 15
+    })
+    this.map = map
   },
   created: function () {
     setInterval(() => {
