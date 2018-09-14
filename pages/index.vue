@@ -130,14 +130,7 @@ export default {
       map: null
     }
   },
-  mounted () {
-    const element = document.getElementById('map')
-    const map = new this.$gmap.Map(element, {
-      center: { lat: 35.735748915, lng: 139.89796049 },
-      zoom: 13
-    })
-    this.map = map
-  },
+  mounted () {},
   created: function () {
     setInterval(() => {
       this.getTime()

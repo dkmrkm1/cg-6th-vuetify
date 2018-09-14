@@ -98,9 +98,14 @@ export default {
       items: [
         { icon: 'home', title: 'ホーム', to: '/' },
         {
+          icon: 'people',
+          title: '出演者一覧',
+          to: '/idols'
+        },
+        {
           icon: 'list_alt',
           title: 'セットリスト予想',
-          to: '/idols'
+          to: '/setlist'
         },
         {
           icon: 'filter_vintage',
@@ -113,7 +118,7 @@ export default {
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: 'CinderellaGirls 6thLive ファンサイト'
+      title: 'Produce the Cinderella Girls!!!!'
     }
   }
 }

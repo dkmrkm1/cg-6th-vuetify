@@ -1,6 +1,3 @@
-// import dotenv from 'dotenv'
-// dotenv.config()
-
 module.exports = {
   /*
   ** Headers of the page
@@ -21,8 +18,7 @@ module.exports = {
     apiKey: process.env.API_KEY
   },
   plugins: [
-    { src: '~/plugins/vuetify.js' },
-    { src: '~/plugins/maps', ssr: false }
+    { src: '~/plugins/vuetify.js' }
   ],
   css: [
     '~/assets/style/app.styl'

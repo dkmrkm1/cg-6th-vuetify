@@ -2,8 +2,23 @@
   <v-container grid-list-xl>
     <v-layout row wrap>
       <v-flex xs12 sm4 md4>
-        <v-card class="card-live" style="min-height:200px;">
-          <v-img class="white--text" height="200px" src="/wall.jpg">
+        <!-- <v-card class="card-live" style="min-height:200px;"> -->
+        <v-card color="cyan darken-2" class="white--text">
+          <v-layout>
+            <v-flex xs5>
+              <v-img height="" src="/wall.jpg"></v-img>
+            </v-flex>
+            <v-flex xs7>
+              <v-card-title primary-title>
+                <div>
+                  <div class="headline">Supermodel</div>
+                  <div>Foster the People</div>
+                  <div>(2013)</div>
+                </div>
+              </v-card-title>
+            </v-flex>
+          </v-layout>
+          <!-- <v-img class="white--text" height="200px" src="/wall.jpg">
             <v-container fill-height fluid>
               <v-layout fill-height>
                 <v-flex xs12 align-end flexbox>
@@ -12,7 +27,7 @@
                 </v-flex>
               </v-layout>
             </v-container>
-          </v-img>
+          </v-img> -->
         </v-card>
       </v-flex>
       <v-flex xs12 sm4 md4>
