@@ -15,9 +15,49 @@
         </v-img>
       </v-card>
     </v-flex>
-    <v-flex xs12 sm12 md12>
+    <v-flex xs12 sm2 md2>
       <v-card>
-        <v-card-title class="headline">運営の手引き</v-card-title>
+        <v-card-title class="headline blue lighten-1">運営の手引き</v-card-title>
+        <v-card-text class="card-text-setlist">
+          <p class="card-text-setlist-title">◉ セットリスト予想</p>
+          <p>ライブ当日毎のシンデレラガールズ出演者一覧と予想されるセットリストを記載しております。</p>
+          <p class="card-text-setlist-title">◉ フラワースタンド</p>
+          <p>有志の方のフラワースタンド企画について纏めさせて頂いております。</p>
+          <p class="card-text-setlist-title">◉ このサイトについて</p>
+          <p>当サイトについて記載しております。お問い合わせ・ご意見・ご要望等ありましたらこちらよりお願い致します。</p>
+          <p style="display:inline-block; margin-top:30px;">
+            ※本サイトの運営は、一個人がシンデレラガールズ6thLIVEを盛り上げたい一心で、非営利にて行なっております。当日は本人ももちろん参加致します。
+          </p>
+          <div>
+            <a href="https://twiter.com/share?url=https://pensive-lichterman-504d94.netlify.com&hashtags=imas_cg6th&text=%e3%81%82%e3%81%a863%e6%97%a5%21%21%20%7c%20%e3%82%b7%e3%83%b3%e3%83%87%e3%83%ac%e3%83%a9%e3%82%ac%e3%83%bc%e3%83%ab%e3%82%ba6thLIVE%e3%83%95%e3%82%a1%e3%83%b3%e3%82%b5%e3%82%a4%e3%83%88"
+              rel="nofollow" target="_blank">リンク</a>
+          </div>
+        </v-card-text>
+      </v-card>
+    </v-flex>
+    <v-flex xs12 sm8 md8>
+      <v-card>
+        <v-card-title class="headline blue lighten-1">運営の手引き</v-card-title>
+        <v-card-text class="card-text-setlist">
+          <p class="card-text-setlist-title">◉ セットリスト予想</p>
+          <p>ライブ当日毎のシンデレラガールズ出演者一覧と予想されるセットリストを記載しております。</p>
+          <p class="card-text-setlist-title">◉ フラワースタンド</p>
+          <p>有志の方のフラワースタンド企画について纏めさせて頂いております。</p>
+          <p class="card-text-setlist-title">◉ このサイトについて</p>
+          <p>当サイトについて記載しております。お問い合わせ・ご意見・ご要望等ありましたらこちらよりお願い致します。</p>
+          <p style="display:inline-block; margin-top:30px;">
+            ※本サイトの運営は、一個人がシンデレラガールズ6thLIVEを盛り上げたい一心で、非営利にて行なっております。当日は本人ももちろん参加致します。
+          </p>
+          <div>
+            <a href="https://twiter.com/share?url=https://pensive-lichterman-504d94.netlify.com&hashtags=imas_cg6th&text=%e3%81%82%e3%81%a863%e6%97%a5%21%21%20%7c%20%e3%82%b7%e3%83%b3%e3%83%87%e3%83%ac%e3%83%a9%e3%82%ac%e3%83%bc%e3%83%ab%e3%82%ba6thLIVE%e3%83%95%e3%82%a1%e3%83%b3%e3%82%b5%e3%82%a4%e3%83%88"
+              rel="nofollow" target="_blank">リンク</a>
+          </div>
+        </v-card-text>
+      </v-card>
+    </v-flex>
+    <v-flex xs12 sm2 md2>
+      <v-card>
+        <v-card-title class="headline blue lighten-1">運営の手引き</v-card-title>
         <v-card-text class="card-text-setlist">
           <p class="card-text-setlist-title">◉ セットリスト予想</p>
           <p>ライブ当日毎のシンデレラガールズ出演者一覧と予想されるセットリストを記載しております。</p>

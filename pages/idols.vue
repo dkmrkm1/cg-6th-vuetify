@@ -1,78 +1,21 @@
 <template>
   <v-container grid-list-xl>
     <v-layout row wrap>
-      <v-flex xs12 sm4 md4>
-        <!-- <v-card class="card-live" style="min-height:200px;"> -->
-        <v-card color="cyan darken-2" class="white--text">
-          <v-layout>
-            <v-flex xs5>
-              <v-img height="" src="/wall.jpg"></v-img>
-            </v-flex>
-            <v-flex xs7>
-              <v-card-title primary-title>
-                <div>
-                  <div class="headline">Supermodel</div>
-                  <div>Foster the People</div>
-                  <div>(2013)</div>
-                </div>
-              </v-card-title>
-            </v-flex>
-          </v-layout>
-          <!-- <v-img class="white--text" height="200px" src="/wall.jpg">
-            <v-container fill-height fluid>
-              <v-layout fill-height>
-                <v-flex xs12 align-end flexbox>
-                  <h1 class="attribute">Cute</h1>
-                  <h1 class="img-count">43 girls</h1>
-                </v-flex>
-              </v-layout>
-            </v-container>
-          </v-img> -->
-        </v-card>
-      </v-flex>
-      <v-flex xs12 sm4 md4>
-        <v-card class="card-live" style="min-height:200px;">
-          <v-img class="white--text" height="200px" src="/cool.jpg">
-            <v-container fill-height fluid>
-              <v-layout fill-height>
-                <v-flex xs12 align-end flexbox>
-                  <h1 class="attribute">Cool</h1>
-                  <h1 class="img-count">43 girls</h1>
-                </v-flex>
-              </v-layout>
-            </v-container>
-          </v-img>
-        </v-card>
-      </v-flex>
-      <v-flex xs12 sm4 md4>
-        <v-card class="card-live" style="min-height:200px;">
-          <v-img class="white--text" height="200px" src="/photo.jpg">
-            <v-container fill-height fluid>
-              <v-layout fill-height>
-                <v-flex xs12 align-end flexbox>
-                  <h1 class="attribute">Passion</h1>
-                  <h1 class="img-count">43 girls</h1>
-                </v-flex>
-              </v-layout>
-            </v-container>
-          </v-img>
-        </v-card>
-      </v-flex>
       <v-flex xs12 sm12 md12>
         <v-card>
-          <v-card-title class="headline">出演者一覧（敬称略、順不同）</v-card-title>
+          <v-card-title class="headline pink lighten-3 white--text">出演者一覧(敬称略)</v-card-title>
           <v-data-table :headers="headers" :items="idols" hide-actions>
             <template slot="items" slot-scope="props">
               <td class="text-xs-center idol-text">{{ props.item.name }}</td>
               <td class="text-xs-center idol-text">{{ props.item.act }}</td>
               <td class="text-xs-center">{{ props.item.attribute }}</td>
-              <td v-if="props.item.first" class="text-xs-center orange white--text idol-attribute"> ● </td>
+              <td v-if="props.item.first" class="text-xs-center orange lighten-1 white--text idol-attribute"> ● </td>
               <td v-else class="text-xs-center idol-attribute"> - </td>
-              <td v-if="props.item.second" class="text-xs-center orange white--text idol-attribute"> ● </td>
+              <td v-if="props.item.second" class="text-xs-center orange lighten-1 white--text idol-attribute"> ● </td>
               <td v-else class="text-xs-center idol-attribute"> - </td>
-              <td v-if="props.item.third" class="text-xs-center orange white--text idol-attribute"> ● </td>
+              <td v-if="props.item.third" class="text-xs-center orange lighten-1 white--text idol-attribute"> ● </td>
               <td v-else class="text-xs-center idol-attribute"> - </td>
-              <td v-if="props.item.fourth" class="text-xs-center orange white--text idol-attribute"> ● </td>
+              <td v-if="props.item.fourth" class="text-xs-center orange lighten-1 white--text idol-attribute"> ● </td>
               <td v-else class="text-xs-center idol-attribute"> - </td>
             </template>
           </v-data-table>

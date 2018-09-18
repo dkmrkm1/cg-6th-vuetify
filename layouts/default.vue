@@ -53,22 +53,12 @@ body {
 .container {
   padding: 13px;
 }
+.v-card {
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+  transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+}
 .v-toolbar__content {
-  /* background-image: linear-gradient(
-    45deg,
-    #ff9a9e 0%,
-    #fad0c4 99%,
-    #fad0c4 100%
-  ); */
-  background-image: linear-gradient(
-    to left,
-    #ff8177 0%,
-    #ff867a 0%,
-    #ff8c7f 21%,
-    #f99185 52%,
-    #cf556c 78%,
-    #b12a5b 100%
-  );
+  background: #ff5722;
   color: #fff;
 }
 .v-toolbar__title {
@@ -82,7 +72,7 @@ body {
   border-radius: 10px;
 }
 .v-card__title {
-  background-image: linear-gradient(to right, #42a5f5 0%, #90caf9 100%);
+  /* background-image: linear-gradient(to right, #42a5f5 0%, #90caf9 100%); */
   color: #fff;
   font-weight: bold;
 }
@@ -118,7 +108,7 @@ export default {
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: 'Produce the Cinderella Girls!!!!'
+      title: 'Produce the Cinderella Girls!!!!!!'
     }
   }
 }
