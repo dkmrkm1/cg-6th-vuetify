@@ -72,9 +72,12 @@ body {
   border-radius: 10px;
 }
 .v-card__title {
-  /* background-image: linear-gradient(to right, #42a5f5 0%, #90caf9 100%); */
-  color: #fff;
-  font-weight: bold;
+  border-bottom: 1px solid lightgray;
+  color: gray;
+}
+.headline {
+  font-size: 19px !important;
+  line-height: 28px !important;
 }
 </style>
 

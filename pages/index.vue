@@ -15,9 +15,9 @@
         </v-img>
       </v-card>
     </v-flex>
-    <v-flex xs12 sm2 md2>
+    <v-flex xs12 sm3 md3>
       <v-card>
-        <v-card-title class="headline blue lighten-1">運営の手引き</v-card-title>
+        <v-card-title class="headline">運営の手引き</v-card-title>
         <v-card-text class="card-text-setlist">
           <p class="card-text-setlist-title">◉ セットリスト予想</p>
           <p>ライブ当日毎のシンデレラガールズ出演者一覧と予想されるセットリストを記載しております。</p>
@@ -35,9 +35,9 @@
         </v-card-text>
       </v-card>
     </v-flex>
-    <v-flex xs12 sm8 md8>
+    <v-flex xs12 sm6 md6>
       <v-card>
-        <v-card-title class="headline blue lighten-1">運営の手引き</v-card-title>
+        <v-card-title class="headline">運営の手引き</v-card-title>
         <v-card-text class="card-text-setlist">
           <p class="card-text-setlist-title">◉ セットリスト予想</p>
           <p>ライブ当日毎のシンデレラガールズ出演者一覧と予想されるセットリストを記載しております。</p>
@@ -55,9 +55,9 @@
         </v-card-text>
       </v-card>
     </v-flex>
-    <v-flex xs12 sm2 md2>
+    <v-flex xs12 sm3 md3>
       <v-card>
-        <v-card-title class="headline blue lighten-1">運営の手引き</v-card-title>
+        <v-card-title class="headline">運営の手引き</v-card-title>
         <v-card-text class="card-text-setlist">
           <p class="card-text-setlist-title">◉ セットリスト予想</p>
           <p>ライブ当日毎のシンデレラガールズ出演者一覧と予想されるセットリストを記載しております。</p>
@@ -110,11 +110,6 @@
           <v-spacer></v-spacer>
           <v-btn color="primary" flat nuxt to="/inspire">Continue</v-btn>
         </v-card-actions>
-      </v-card>
-    </v-flex>
-    <v-flex xs12 sm6 md6>
-      <v-card>
-        <!-- <div id="map"></div> -->
       </v-card>
     </v-flex>
   </v-layout>
@@ -170,6 +165,7 @@ export default {
       map: null
     }
   },
+  components: {},
   mounted () {},
   created: function () {
     setInterval(() => {

@@ -3,7 +3,7 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'Cinderella6th.live',
+    title: 'Produce the Cinderella Girls!!!!!!',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
