@@ -17,6 +17,12 @@
     </v-flex>
     <v-flex xs12 sm3 md3>
       <v-card>
+        <v-card-title class="headline">開催概要</v-card-title>
+        <v-card-text>
+          <p></p>
+        </v-card-text>
+      </v-card>
+      <v-card>
         <v-card-title class="headline">当日の天気</v-card-title>
         <v-card-text>
           hogehoge
@@ -105,6 +111,7 @@
 <style scoped>
 .v-card {
   min-height: 100px;
+  margin-bottom: 10px;
 }
 .card-live {
   min-height: 350px;

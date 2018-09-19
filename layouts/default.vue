@@ -76,8 +76,8 @@ body {
   color: gray;
 }
 .headline {
-  font-size: 19px !important;
-  line-height: 28px !important;
+  font-size: 16px !important;
+  line-height: 13px !important;
 }
 </style>
 

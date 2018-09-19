@@ -10,7 +10,9 @@
 import IdolsList from '~/components/IdolsList.vue'
 
 export default {
-  data () {},
+  data () {
+    return {}
+  },
   components: {
     IdolsList
   }

@@ -801,7 +801,7 @@ export default {
 }
 .search-idol {
   font-size: 14px;
-  padding-left: 13px;
+  padding: 10px;
   border: 1px solid lightgray;
   margin-left: 40px;
   border-radius: 13px;
