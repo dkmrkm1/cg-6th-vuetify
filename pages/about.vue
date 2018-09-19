@@ -18,6 +18,7 @@
             <p>このサイトについてのご意見、ご要望等ありましたら下記フォームより送信頂くか、<a href="https://twitter.com/duuun1002" target="_blank">@duuun1002</a> までご連絡ください。</p>
           </v-card-text>
             <v-form name="contact" netlify>
+            <input type="hidden" name="contact" value="contact" />
             <v-flex xs12 sm6 md6>
               <v-text-field name="name" label="Name" required></v-text-field>
             </v-flex>
