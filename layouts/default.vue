@@ -58,15 +58,15 @@ body {
   transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .v-toolbar__content {
-  background: #ff5722;
-  color: #fff;
+  background: #f4c23a;
+  color: #191a1c;
 }
 .v-toolbar__title {
   font-weight: bold;
   font-size: 1.7rem;
 }
 .v-btn__content {
-  color: #fff;
+  color: #191a1c;
 }
 .v-card {
   border-radius: 10px;

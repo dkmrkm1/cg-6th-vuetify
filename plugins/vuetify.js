@@ -3,7 +3,7 @@ import Vuetify from 'vuetify'
 
 Vue.use(Vuetify, {
   theme: {
-    primary: '#ff5722',
+    primary: '#f4c23a',
     secondary: '#424242',
     accent: '#82B1FF',
     error: '#FF5252',
