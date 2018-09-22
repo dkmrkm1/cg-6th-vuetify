@@ -8,20 +8,20 @@
         </p>
         <form-header />
         <p class="name">
-          <input name="name" type="text" v-model="edit.name" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="お名前" id="name" />
+          <input name="name" type="text" v-model="edit.name" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="お名前*" id="name" />
           <span v-show="!validation.name">名前を入力して下さい。</span>
         </p>
         <p class="email">
-          <input name="email" type="text" v-model="edit.mail" class="validate[required,custom[email]] feedback-input" id="email" placeholder="メールアドレス" />
+          <input name="email" type="email" v-model="edit.mail" class="validate[required,custom[email]] feedback-input" id="email" placeholder="メールアドレス" />
           <span v-show="!validation.mail">メールアドレスを入力して下さい。</span>
         </p>
         <p class="text">
-          <textarea name="text" v-model="edit.comment" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="コメント"></textarea>
+          <textarea name="text" v-model="edit.comment" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="コメント*"></textarea>
           <span v-show="!validation.comment">コメントを入力して下さい。</span>
         </p>
         
-        <div class="submit">
-          <input type="submit" value="送信" id="button-blue"/>
+        <div class="submit" :class="{ nonActive: !isActive }">
+          <input type="submit" :disabled="!isActive" value="送信" id="button-blue"/>
           <div class="ease"></div>
         </div>
       </form>
@@ -32,8 +32,6 @@
 <script>
 import FormHeader from '~/components/modules/FormHeader.vue'
 
-// var emailRE = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-
 export default {
   name: 'about-form',
   data () {
@@ -43,7 +41,7 @@ export default {
         mail: '',
         comment: ''
       },
-      isClick: false
+      isActive: false
     }
   },
   components: {
@@ -61,7 +59,11 @@ export default {
       return {
         name: !!this.edit.name.trim(),
         mail: !!this.edit.mail,
-        comment: !!this.edit.comment.trim()
+        comment: !!this.edit.comment.trim(),
+        isActive:
+          !!this.edit.name.trim() &&
+          !!this.edit.mail &&
+          !!this.edit.comment.trim()
       }
     },
     isValid () {
@@ -77,6 +79,9 @@ export default {
 <style scoped>
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
+.nonActive {
+  background: gray !important;
+}
 #feedback-page {
   text-align: center;
 }
@@ -125,15 +130,15 @@ export default {
 .feedback-input:focus {
   background: #fff;
   box-shadow: 0;
-  border: 3px solid #3498db;
-  color: #3498db;
+  border: 3px solid #f4c23a;
+  color: #f4c23a;
   outline: none;
   padding: 13px 13px 13px 54px;
 }
 
 .focused {
-  color: #30aed6;
-  border: #30aed6 solid 3px;
+  color: #f4c23a;
+  border: #f4c23a solid 3px;
 }
 
 /* Icons ---------------------------------- */

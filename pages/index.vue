@@ -22,13 +22,24 @@
           <p></p>
         </v-card-text>
       </v-card>
+
+      <!-- 天気予報API -->
       <v-card>
-        <v-card-title class="headline">当日の天気</v-card-title>
-        <v-card-text>
-          hogehoge
-        </v-card-text>
+        <v-card-title class="headline">現地の天気</v-card-title>
+        <div class="weather-info">
+          <!-- <p>{{ city }}</p> -->
+          <p>埼玉</p>
+          <p>{{ condition.main }}</p>
+          <p>{{ temp | roundUp }}</p>
+        </div>
+        <div class="weather-info">
+          <p>{{ city2 }}</p>
+          <p>{{ condition2.main }}</p>
+          <p>{{ temp2 | roundUp }}</p>
+        </div>
       </v-card>
     </v-flex>
+
     <v-flex xs12 sm6 md6>
       <v-card>
         <v-card-title class="headline">運営の手引き</v-card-title>
@@ -130,6 +141,7 @@
 
 <script>
 import $moment from 'moment'
+import axios from 'axios'
 
 export default {
   head () {
@@ -154,11 +166,45 @@ export default {
       hours: '',
       minutes: '',
       seconds: '',
-      map: null
+      city: null,
+      temp: null,
+      condition: {
+        main: null
+      },
+      city2: null,
+      temp2: null,
+      condition2: {
+        main: null
+      }
     }
   },
   components: {},
-  mounted () {},
+  mounted: function () {
+    axios
+      .get(
+        // 'https://api.openweathermap.org/data/2.5/weather?q={Saitama, Osaka},jp&units=metric&appid=0dc0edc4f6d138925d57d993359abf92'
+        'https://api.openweathermap.org/data/2.5/group?id=1853226,1856057&appid=0dc0edc4f6d138925d57d993359abf92'
+      )
+      .then(
+        function (response) {
+          this.city = response.data.list[0].name
+          this.temp = response.data.list[0].main.temp
+          this.condition = response.data.list[0].weather[0]
+
+          this.city2 = response.data.list[1].name
+          this.temp2 = response.data.list[1].main.temp
+          this.condition2 = response.data.list[1].weather[0]
+        }.bind(this)
+      )
+      .catch(function (error) {
+        console.log(error)
+      })
+  },
+  filters: {
+    roundUp (value) {
+      return Math.floor((value - 273.15) * Math.pow(10, 1)) / Math.pow(10, 1) // ケルビン => 摂氏
+    }
+  },
   created: function () {
     setInterval(() => {
       this.getTime()
