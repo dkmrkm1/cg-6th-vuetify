@@ -27,13 +27,12 @@
       <v-card>
         <v-card-title class="headline">現地の天気</v-card-title>
         <div class="weather-info">
-          <!-- <p>{{ city }}</p> -->
           <p>埼玉</p>
           <p>{{ condition.main }}</p>
           <p>{{ temp | roundUp }}</p>
         </div>
         <div class="weather-info">
-          <p>{{ city2 }}</p>
+          <p>名古屋</p>
           <p>{{ condition2.main }}</p>
           <p>{{ temp2 | roundUp }}</p>
         </div>
