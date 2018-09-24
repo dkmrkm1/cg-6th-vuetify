@@ -13,25 +13,8 @@
         </v-card>
       </v-flex>
       <v-flex xs12 sm12 md12>
-            <!-- <v-form name="contact" netlify-honeypot="bot-field" data-netlify="true" method="post">
-            <input type="hidden" name="contact" value="contact" />
-            <p class="hidden"  style="display: none;">
-              <label>Don’t fill this out: <input name="bot-field"></label>
-            </p>
-            <v-flex xs12 sm6 md6>
-              <v-text-field name="name" label="Name" required></v-text-field>
-            </v-flex>
-            <v-flex xs12 sm6 md6>
-              <v-text-field name="email" label="E-mail" required></v-text-field>
-            </v-flex>
-            <v-flex xs12 sm12 md12>
-              <v-text-field name="message" label="Message" required></v-text-field>
-            </v-flex>
-            <v-btn type="submit" class="orange darken-2">送信</v-btn>
-          </v-form> -->
-
-          <!-- お問い合わせフォーム -->
-          <about-form />
+        <!-- お問い合わせフォーム -->
+        <about-form />
       </v-flex>
     </v-layout>
   </v-container>

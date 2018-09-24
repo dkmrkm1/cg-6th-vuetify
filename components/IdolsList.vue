@@ -2,7 +2,6 @@
   <v-flex xs12 sm12 md12>
     <v-card style="min-height:100px;">
       <v-card-title class="headline">出演者一覧(敬称略)<input type="text" v-model="searchIdol" placeholder="検索" class="search-idol" tabindex="-1"></v-card-title>
-      <!-- <v-data-table :headers="headers" :items="idols" hide-actions> -->
       <v-data-table :headers="headers" :items="fileterdIdols" hide-actions>
         <template slot="items" slot-scope="props">
           <td class="text-xs-center idol-text">{{ props.item.name }}</td>

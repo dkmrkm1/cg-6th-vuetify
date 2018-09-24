@@ -19,28 +19,3 @@ export const actions = {
     return state.message
   }
 }
-
-// export const actions = {
-//   writeHoge (context, value) {
-//     context.commit('setHogeFromStore', value)
-//   }
-// }
-
-// Vue.use(Vuex)
-
-// const Form = {
-//   namespaced: true,
-//   state: {},
-//   mutations: {},
-//   actions: {
-//     buttonAction ({ commit, state, rootState }) {
-//       console.log('buttonAction')
-//     }
-//   }
-// }
-
-// export default new Vuex.Store({
-//   modules: {
-//     Form
-//   }
-// })
