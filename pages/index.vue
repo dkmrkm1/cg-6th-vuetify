@@ -181,7 +181,6 @@ export default {
   mounted: function () {
     axios
       .get(
-        // 'https://api.openweathermap.org/data/2.5/weather?q={Saitama, Osaka},jp&units=metric&appid=0dc0edc4f6d138925d57d993359abf92'
         'https://api.openweathermap.org/data/2.5/group?id=1853226,1856057&appid=0dc0edc4f6d138925d57d993359abf92'
       )
       .then(
