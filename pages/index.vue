@@ -79,7 +79,7 @@
     </v-flex>
     <v-flex xs12 sm6 md6>
       <v-card>
-        <v-card-title class="headline">[埼玉] メットライフドームまでのアクセス
+        <v-card-title class="headline">サイタマ会場
           <v-chip color="blue" text-color="white">
             <v-avatar>
               <v-icon color="white">whatshot</v-icon>
@@ -91,11 +91,14 @@
             </v-avatar>11/11(日)
           </v-chip>
         </v-card-title>
+        <div class="ggmap">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6716.394153569234!2d139.41745931117373!3d35.76827489348364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018de26f47cfbd3%3A0xa09b9b1c140042ce!2z44Oh44OD44OI44Op44Kk44OV44OJ44O844OgKOilv-atpuODieODvOODoCk!5e0!3m2!1sja!2sjp!4v1538066316550" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
       </v-card>
     </v-flex>
     <v-flex xs12 sm6 md6>
       <v-card>
-        <v-card-title class="headline">[愛知] ナゴヤドームまでのアクセス
+        <v-card-title class="headline">ナゴヤ会場
           <v-chip color="blue" text-color="white">
             <v-avatar>
               <v-icon color="white">whatshot</v-icon>
@@ -107,11 +110,9 @@
             </v-avatar>12/2(日)
           </v-chip>
         </v-card-title>
-        <div id="map"></div>
-        <v-card-actions>
-          <v-spacer></v-spacer>
-          <v-btn color="primary" flat nuxt to="/inspire">Continue</v-btn>
-        </v-card-actions>
+        <div class="ggmap">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3260.800100082122!2d136.94454681321125!3d35.1865345645544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60037051390295cf%3A0xa09364c226355e48!2z44OK44K044Ok44OJ44O844Og!5e0!3m2!1sja!2sjp!4v1538067110161" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
       </v-card>
     </v-flex>
   </v-layout>
@@ -135,6 +136,24 @@
 .card-text-setlist-title {
   font-weight: bold;
   font-size: 1.4rem;
+}
+
+/* google map */
+.ggmap {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+.ggmap iframe,
+.ggmap object,
+.ggmap embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 </style>
 
