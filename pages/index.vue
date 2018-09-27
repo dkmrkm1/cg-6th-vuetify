@@ -1,6 +1,7 @@
 <template>
   <v-container grid-list-xl>
   <v-layout cow wrap>
+    
     <v-flex xs12 sm12 md12>
       <v-card class="card-live">
         <v-img class="white--text" height="350px" src="/live.jpg">
@@ -15,33 +16,24 @@
         </v-img>
       </v-card>
     </v-flex>
-    <v-flex xs12 sm3 md3>
-      <v-card>
-        <v-card-title class="headline">開催概要</v-card-title>
-        <v-card-text>
-          <p></p>
-        </v-card-text>
-      </v-card>
 
-      <!-- 天気予報API -->
-      <v-card>
-        <v-card-title class="headline">現地の天気</v-card-title>
-        <div class="weather-info">
-          <p>埼玉</p>
-          <p>{{ condition.main }}</p>
-          <p>{{ temp | roundUp }}</p>
-        </div>
-        <div class="weather-info">
-          <p>名古屋</p>
-          <p>{{ condition2.main }}</p>
-          <p>{{ temp2 | roundUp }}</p>
-        </div>
+    <v-flex xs12 sm3 md3>
+      <v-card class="pink darken-1 white--text">
+        <v-card-text class="attributes">Cute</v-card-text>
+        <v-card-text class="attributes-people">12 people</v-card-text>
+      </v-card>
+      <v-card class="blue darken-2 white--text">
+        <v-card-text class="attributes">Cool</v-card-text>
+        <v-card-text class="attributes-people">12 people</v-card-text>
+      </v-card>
+      <v-card class="yellow darken-3 white--text">
+        <v-card-text class="attributes">Passion</v-card-text>
+        <v-card-text class="attributes-people">12 people</v-card-text>
       </v-card>
     </v-flex>
 
     <v-flex xs12 sm6 md6>
       <v-card>
-        <v-card-title class="headline">運営の手引き</v-card-title>
         <v-card-text>
           <p><strong>◉ 出演者一覧</strong></p>
           <p>各公演に参加される皆様を記載しています。名前で検索、属性・出演日でソートも可能にしています。</p>
@@ -57,40 +49,29 @@
         </v-card-text>
       </v-card>
     </v-flex>
-    <v-flex xs12 sm3 md3>
-      <v-card>
-        <v-card-text>
-          <!-- SNS -->
-          <no-ssr>
-            <div>
-              <a href="https://twiter.com/share?url=https://cg-6th.fun&hashtags=imas_cg_6th&text=%e3%81%82%e3%81%a863%e6%97%a5%21%21%20%7c%20%e3%82%b7%e3%83%b3%e3%83%87%e3%83%ac%e3%83%a9%e3%82%ac%e3%83%bc%e3%83%ab%e3%82%ba6thLIVE%e3%83%95%e3%82%a1%e3%83%b3%e3%82%b5%e3%82%a4%e3%83%88"
-                rel="nofollow" target="_blank">リンク</a>
-            </div>
-          </no-ssr>
-          <!-- SNS -->
-        </v-card-text>
+
+    <v-flex xs12 sm3 xs3>
+      <v-card class="">
+        <div class="weather-info">
+          <p>埼玉県 所沢市</p>
+          <p v-if="condition.main == 'Fog'">曇り</p>
+          <p>{{ condition.main }} {{ temp | roundUp }}&deg;C</p>
+        </div>
       </v-card>
-      <v-card>
-        <v-card-title class="headline">運営の手引き</v-card-title>
-        <v-card-text>
-          hogehoge
-        </v-card-text>
+      <v-card class="">
+        <div class="weather-info">
+          <p>愛知県 名古屋市</p>
+          <p v-if="condition2.main == 'Fog'">曇り</p>
+          <p>{{ condition2.main }} {{ temp2 | roundUp }}&deg;C</p>
+        </div>
       </v-card>
+    </v-flex>
+    <v-flex xs12 sm12 md12>
+      <h4>各会場へのアクセス</h4>
+      <i class="wi wi-day-sunny wi-flip-vertical"></i>
     </v-flex>
     <v-flex xs12 sm6 md6>
       <v-card>
-        <v-card-title class="headline">サイタマ会場
-          <v-chip color="blue" text-color="white">
-            <v-avatar>
-              <v-icon color="white">whatshot</v-icon>
-            </v-avatar>11/10(土)
-          </v-chip>
-          <v-chip color="teal" text-color="white">
-            <v-avatar>
-              <v-icon color="white">whatshot</v-icon>
-            </v-avatar>11/11(日)
-          </v-chip>
-        </v-card-title>
         <div class="ggmap">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6716.394153569234!2d139.41745931117373!3d35.76827489348364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018de26f47cfbd3%3A0xa09b9b1c140042ce!2z44Oh44OD44OI44Op44Kk44OV44OJ44O844OgKOilv-atpuODieODvOODoCk!5e0!3m2!1sja!2sjp!4v1538066316550" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
@@ -98,18 +79,6 @@
     </v-flex>
     <v-flex xs12 sm6 md6>
       <v-card>
-        <v-card-title class="headline">ナゴヤ会場
-          <v-chip color="blue" text-color="white">
-            <v-avatar>
-              <v-icon color="white">whatshot</v-icon>
-            </v-avatar>12/1(土)
-          </v-chip>
-          <v-chip color="teal" text-color="white">
-            <v-avatar>
-              <v-icon color="white">whatshot</v-icon>
-            </v-avatar>12/2(日)
-          </v-chip>
-        </v-card-title>
         <div class="ggmap">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3260.800100082122!2d136.94454681321125!3d35.1865345645544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60037051390295cf%3A0xa09364c226355e48!2z44OK44K044Ok44OJ44O844Og!5e0!3m2!1sja!2sjp!4v1538067110161" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
@@ -137,7 +106,21 @@
   font-weight: bold;
   font-size: 1.4rem;
 }
-
+.attributes {
+  font-size: 2.3rem;
+  font-weight: bold;
+  font-family: "Impact" !important;
+}
+.attributes-people {
+  font-size: 1.5rem;
+  text-align: right;
+}
+.weather-info {
+  padding: 10px;
+}
+.weather-info p {
+  font-weight: bold;
+}
 /* google map */
 .ggmap {
   position: relative;
