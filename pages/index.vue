@@ -20,15 +20,15 @@
     <v-flex xs12 sm3 md3>
       <v-card class="pink darken-1 white--text">
         <v-card-text class="attributes">Cute</v-card-text>
-        <v-card-text class="attributes-people">12 people</v-card-text>
+        <v-card-text class="attributes-people">14 people</v-card-text>
       </v-card>
       <v-card class="blue darken-2 white--text">
         <v-card-text class="attributes">Cool</v-card-text>
-        <v-card-text class="attributes-people">12 people</v-card-text>
+        <v-card-text class="attributes-people">20 people</v-card-text>
       </v-card>
       <v-card class="yellow darken-3 white--text">
         <v-card-text class="attributes">Passion</v-card-text>
-        <v-card-text class="attributes-people">12 people</v-card-text>
+        <v-card-text class="attributes-people">16 people</v-card-text>
       </v-card>
     </v-flex>
 
