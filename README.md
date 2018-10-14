@@ -4,7 +4,7 @@
 
 cg-6th-vuetify is a fan site of the Idolm@ster CinderellaGirls made by Nuxt.js and Vuetify.
 
-![image](https://i.imgur.com/8MZH0b7.png)
+![image](https://i.imgur.com/v6t7n4A.gif)
 
 ## Build Setup
 
