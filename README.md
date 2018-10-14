@@ -1,5 +1,5 @@
-# my-vuetify
-
+# cg-6th-live
+![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)
 > Nuxt.js + Vuetify.js project
 
 ## Build Setup

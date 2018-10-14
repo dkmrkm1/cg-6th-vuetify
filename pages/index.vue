@@ -17,6 +17,7 @@
       </v-card>
     </v-flex>
 
+    <!-- 出演者情報 -->
     <v-flex xs12 sm3 md3>
       <v-card class="pink darken-1 white--text">
         <v-card-text class="attributes">Cute</v-card-text>
@@ -32,6 +33,7 @@
       </v-card>
     </v-flex>
 
+    <!-- 目次 -->
     <v-flex xs12 sm6 md6>
       <v-card>
         <v-card-text>
@@ -141,32 +143,32 @@
 </style>
 
 <script>
-import $moment from 'moment'
-import axios from 'axios'
+import $moment from "moment";
+import axios from "axios";
 
 export default {
-  head () {
+  head() {
     return {
       script: [
         {
           src:
-            'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'
+            "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"
         }
       ],
       link: [
         {
-          rel: 'stylesheet',
-          href: 'https://fonts.googleapis.com/css?family=Lobster'
+          rel: "stylesheet",
+          href: "https://fonts.googleapis.com/css?family=Lobster"
         }
       ]
-    }
+    };
   },
-  data () {
+  data() {
     return {
-      days: '',
-      hours: '',
-      minutes: '',
-      seconds: '',
+      days: "",
+      hours: "",
+      minutes: "",
+      seconds: "",
       city: null,
       temp: null,
       condition: {
@@ -177,55 +179,55 @@ export default {
       condition2: {
         main: null
       }
-    }
+    };
   },
   components: {},
-  mounted: function () {
+  mounted: function() {
     axios
       .get(
-        'https://api.openweathermap.org/data/2.5/group?id=1853226,1856057&appid=0dc0edc4f6d138925d57d993359abf92'
+        "https://api.openweathermap.org/data/2.5/group?id=1853226,1856057&appid=0dc0edc4f6d138925d57d993359abf92"
       )
       .then(
-        function (response) {
-          this.city = response.data.list[0].name
-          this.temp = response.data.list[0].main.temp
-          this.condition = response.data.list[0].weather[0]
+        function(response) {
+          this.city = response.data.list[0].name;
+          this.temp = response.data.list[0].main.temp;
+          this.condition = response.data.list[0].weather[0];
 
-          this.city2 = response.data.list[1].name
-          this.temp2 = response.data.list[1].main.temp
-          this.condition2 = response.data.list[1].weather[0]
+          this.city2 = response.data.list[1].name;
+          this.temp2 = response.data.list[1].main.temp;
+          this.condition2 = response.data.list[1].weather[0];
         }.bind(this)
       )
-      .catch(function (error) {
-        console.log(error)
-      })
+      .catch(function(error) {
+        console.log(error);
+      });
   },
   filters: {
-    roundUp (value) {
-      return Math.floor((value - 273.15) * Math.pow(10, 1)) / Math.pow(10, 1) // ケルビン => 摂氏
+    roundUp(value) {
+      return Math.floor((value - 273.15) * Math.pow(10, 1)) / Math.pow(10, 1); // ケルビン => 摂氏
     }
   },
-  created: function () {
+  created: function() {
     setInterval(() => {
-      this.getTime()
-    }, 1000)
+      this.getTime();
+    }, 1000);
   },
   methods: {
-    getTime: function () {
-      let duration = this.getNowTime()
+    getTime: function() {
+      let duration = this.getNowTime();
 
-      this.days = Math.floor(duration.asDays())
-      this.hours = ('0' + duration.hours()).slice(-2) + ' h '
-      this.minutes = ('0' + duration.minutes()).slice(-2) + ' m '
-      this.seconds = ('0' + duration.seconds()).slice(-2) + ' s '
+      this.days = Math.floor(duration.asDays());
+      this.hours = ("0" + duration.hours()).slice(-2) + " h ";
+      this.minutes = ("0" + duration.minutes()).slice(-2) + " m ";
+      this.seconds = ("0" + duration.seconds()).slice(-2) + " s ";
     },
-    getNowTime: function () {
-      let diff = $moment('2018-11-10').diff($moment())
-      let duration = $moment.duration(diff)
-      return duration
+    getNowTime: function() {
+      let diff = $moment("2018-11-10").diff($moment());
+      let duration = $moment.duration(diff);
+      return duration;
     }
   }
-}
+};
 </script>
 
 
