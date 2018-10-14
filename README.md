@@ -1,6 +1,8 @@
-# cg-6th-live
+# cg-6th-vuetify
 ![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)
-> Nuxt.js + Vuetify.js project
+![](https://img.shields.io/badge/release-v1.0.0-blue.svg)
+
+cg-6th-vuetify is a fan site of the Idolm@ster CinderellaGirls made by Nuxt.js and Vuetify.
 
 ## Build Setup
 
@@ -20,3 +22,6 @@ $ npm run generate
 ```
 
 For detailed explanation on how things work, check out the [Nuxt.js](https://github.com/nuxt/nuxt.js) and [Vuetify.js](https://vuetifyjs.com/) documentation.
+
+## License
+MIT
