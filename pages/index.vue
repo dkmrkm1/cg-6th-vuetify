@@ -222,7 +222,7 @@ export default {
       this.seconds = ("0" + duration.seconds()).slice(-2) + " s ";
     },
     getNowTime: function() {
-      let diff = $moment("2018-11-10").diff($moment());
+      let diff = $moment("2018-12-01").diff($moment());
       let duration = $moment.duration(diff);
       return duration;
     }
